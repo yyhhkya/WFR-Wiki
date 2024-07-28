@@ -1,3 +1,1 @@
-# wfr-wiki
-
-1
+# WFR-Wiki
