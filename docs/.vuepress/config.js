@@ -2,6 +2,8 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
+import { gitPlugin } from '@vuepress/plugin-git'
+
 export default defineUserConfig({
   lang: 'zh_CN',
 
@@ -28,4 +30,13 @@ export default defineUserConfig({
   }),
 
   bundler: viteBundler(),
+
+  // 插件
+  plugins: [
+    gitPlugin({
+      createdTime: true, // 是否收集页面的创建时间。
+      updatedTime: true, // 是否收集页面的更新时间。
+    }),
+  ],
+
 })
