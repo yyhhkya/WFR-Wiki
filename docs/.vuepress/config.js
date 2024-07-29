@@ -31,11 +31,10 @@ export default defineUserConfig({
   bundler: viteBundler(),
 
   // 插件
-  // plugins: [
-  //   gitPlugin({
-  //     createdTime: true, // 是否收集页面的创建时间。
-  //     updatedTime: true, // 是否收集页面的更新时间。
-  //   }),
-  // ],
+  plugins: [
+    gitPlugin({
+      lastUpdated: "更新时间",
+    }),
+  ],
 
 })
