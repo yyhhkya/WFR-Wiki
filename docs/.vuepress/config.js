@@ -20,7 +20,8 @@ export default defineUserConfig({
         text: '守则',
         children: [
           { text: '服务器玩家守则', link: '/服务器玩家守则' },
-          { text: 'QQ群群员守则', link: '/QQ群群员守则' }
+          { text: 'QQ群群员守则', link: '/QQ群群员守则' },
+          { text: 'git-test', link: '/git-test' },
         ]
       },
     ]
