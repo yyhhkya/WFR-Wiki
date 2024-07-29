@@ -2,7 +2,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
-import { gitPlugin } from '@vuepress/plugin-git'
+// import { gitPlugin } from '@vuepress/plugin-git'
 
 export default defineUserConfig({
   lang: 'zh_CN',
@@ -32,9 +32,9 @@ export default defineUserConfig({
 
   // 插件
   plugins: [
-    gitPlugin({
-      lastUpdated: "更新时间",
-    }),
+    // gitPlugin({
+    //   lastUpdated: "更新时间",
+    // }),
   ],
 
 })
