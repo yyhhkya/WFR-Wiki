@@ -23,20 +23,18 @@ export default defineUserConfig({
           { text: 'QQ群群员守则', link: '/QQ群群员守则' }
         ]
       },
-    ],
-
-    lastUpdated: '上次更新',
+    ]
 
   }),
 
   bundler: viteBundler(),
 
   // 插件
-  plugins: [
-    gitPlugin({
-      createdTime: true, // 是否收集页面的创建时间。
-      updatedTime: true, // 是否收集页面的更新时间。
-    }),
-  ],
+  // plugins: [
+  //   gitPlugin({
+  //     createdTime: true, // 是否收集页面的创建时间。
+  //     updatedTime: true, // 是否收集页面的更新时间。
+  //   }),
+  // ],
 
 })
