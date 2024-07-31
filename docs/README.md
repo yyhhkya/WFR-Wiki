@@ -8,9 +8,9 @@ title: 首页
 
 ## 🎮服务器IP
 
-**主IP > `a.wasfrom.cc`**
+**主IP > `a.wasfrom.cn`**
 
-**备用IP > `b.wasfrom.cc:30337`**
+**备用IP > `b.wasfrom.cn:30337`**
 
 游玩本服务器将默认您同意[《濯花域服务器玩家守则》](/守则/服务器玩家守则)
 
