@@ -2,7 +2,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
-// import { gitPlugin } from '@vuepress/plugin-git'
+
 
 export default defineUserConfig({
   lang: 'zh_CN',
@@ -21,8 +21,7 @@ export default defineUserConfig({
         text: '守则',
         children: [
           { text: '服务器玩家守则', link: '/守则/服务器玩家守则' },
-          { text: 'QQ群群员守则', link: '/守则/QQ群群员守则' },
-          // { text: 'git-test', link: '/git-test' },
+          { text: 'QQ群群员守则', link: '/守则/QQ群群员守则' }
         ]
       },
 
@@ -32,16 +31,31 @@ export default defineUserConfig({
 
     ],
 
-    repo: "https://github.com/yyhhkya/WFR-Wiki",
+    // 仓库链接
+    repo: 'https://github.com/yyhhkya/WFR-Wiki',
+    repoLabel: '仓库链接',
+
+    // 编辑链接
+    docsRepo: 'https://github.com/yyhhkya/WFR-Wiki',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinkText: '编辑此页',
+
+    // 编辑信息
+    lastUpdatedText: '更新时间',
+    contributorsText: '贡献者',
+
+    // 404页面
+    notFound: ['找不到该页面'],
+    backToHome: '返回首页',
+
+    // 侧边栏最大深度
+    sidebarDepth: 4,
 
   }),
 
-  // repo: "https://gitlab.com/yyhhkya/WFR-Wiki",
-  // docsRepo: 'https://gitlab.com/yyhhkya/WFR-Wiki',
-  // docsBranch: 'master',
-  // docsDir: 'docs',
-  // editLinkPattern: ':repo/-/edit/:branch/:path',
-  
+
+
   // 插件
   plugins: [
 
